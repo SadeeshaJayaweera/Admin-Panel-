@@ -37,12 +37,13 @@ const ListingsPage = () => {
     return (
         <div className="listings-container">
             <h2>All Listings</h2>
-            {listings.map(listing => (
+            {listings.map((listing, index) => (
                 <div key={listing.id} className="listing-item">
                     <img src={listing.imageUrl} alt={listing.name} className="listing-image" />
                     <div className="listing-details">
                         <h3>{listing.name}</h3>
                         <p>Listing Number: {listing.number}</p>
+                        {(index + 1) % 3 === 0 && <br />} {/* Line break after every 3 listings */}
                         <div className="button-container">
                             <button onClick={() => handleEdit(listing.id)}>Edit</button>
                             <button onClick={() => handleDelete(listing.id)}>Delete</button>
