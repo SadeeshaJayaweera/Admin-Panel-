@@ -1,15 +1,25 @@
 import React from 'react';
-import Sidebar from "./Components/Sidebar";
-import Content from "./Components/Content";
-import profile from "./Components/Profile";
+
+import NavigationBar from "./Components/NavigationBar";
 import "./App.css";
+import AddNewListing from "./Pages/AddNewListing.jsx";
+import  "./styles/AddNewListing.css";
+import AllListings from "./Pages/AllListings.jsx";
+import "./Pages/AllListings.css";
+import "./Pages/PendingListings.css";
+import PendingListings from "./Pages/PendingListings.jsx";
+
 
 
 const App = () => {
     return (
-        <div className="dashboard">
-            <Sidebar/>
-            <div className="dashboard--content"></div>
+        <div className="AddNewListing">
+
+
+            <NavigationBar />
+            {/*<AddNewListing />*/}
+            <AllListings />
+            {/*<PendingListings />*/}
 
 
 
