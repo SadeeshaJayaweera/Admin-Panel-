@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Pending Listing */
+.pending-listing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Listing Image */
+.listing-image {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Listing Details */
+.listing-details p {
+    margin: 0;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Approve and Delete Buttons */
+.button-container button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .pending-listing {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    .listing-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

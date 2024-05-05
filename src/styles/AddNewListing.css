@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+/* Container */
+.container {
+    max-width: 50%;
+    /*margin: 50%;*/
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    max-width: 35%;
+    display: flex;
+    margin-left: 40%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+/* Inputs */
+input[type='text'],
+input[type='number'],
+textarea,
+select {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Select */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" d="M14.293 5.293a1 1 0 0 0-1.414 0l-3 3a1 1 0 1 0 1.414 1.414L12 8.414V16a1 1 0 1 0 2 0V8.414l1.293 1.293a1 1 0 1 0 1.414-1.414l-3-3z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 40px;
+}
+
+/* File Input */
+input[type='file'] {
+    display: none;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+}
+
+.upload-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Button */
+button[type='submit'] {
+    width: 30%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+    background-color: #218838;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 100%;
+    }
+    form{
+        max-width: 100%;
+        justify-content: left;
+        margin-left: 0;
+    }
+}
+
+
+
+
